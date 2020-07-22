@@ -1,0 +1,17 @@
+@import './global';
+
+.cardStack{
+    @include flexRow;
+    @include flexCenter;
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 100px;
+    height: 160px;
+    text-transform: capitalize;
+    margin-right: 4rem;
+    position: relative;
+
+    &:last-of-type{
+        margin-right: 0;
+    }
+}
