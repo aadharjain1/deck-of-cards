@@ -25,35 +25,34 @@ const typeInfo = {
     }
 };
 
-const setData = e => {
+const getDisplayNumber = number => {
+    switch(number){
+        case 1:
+            return 'A';
+        case 11:
+            return 'J';
+        case 12:
+            return 'Q';
+        case 13:
+            return 'K';
+        default:
+            return number;
+    };
+};
+
+const onDragStart = e => {
     e.dataTransfer.setData('cardId', e.currentTarget.id);
     e.dataTransfer.dropEffect = "move";
 };
 
 const Card = ({ type, number }) => {
-    let displayNumber = number;
+    let displayNumber = getDisplayNumber(number);
     let top = randomGenerator(0, 60);
     let left = randomGenerator(3, 85);
+    let zIndex = randomGenerator(0, 10);
 
-    switch(number){
-        case 1:
-            displayNumber = 'A';
-            break;
-        case 11:
-            displayNumber = 'J';
-            break;
-        case 12:
-            displayNumber = 'Q';
-            break;
-        case 13:
-            displayNumber = 'K';
-            break;
-        default:
-            displayNumber = number;
-            break;
-    }
     return(
-        <div className="card" id={type+number} draggable onDragStart={e => setData(e)} style={{ color: typeInfo[type].color, position: "absolute", top: `${top}%`, left: `${left}%` }}>
+        <div className="card" id={type+number} draggable onDragStart={e => onDragStart(e)} style={{ color: typeInfo[type].color, position: "absolute", top: `${top}%`, left: `${left}%`, zIndex: zIndex }}>
             <div className="topNumber">{displayNumber}</div>
             <div className="cardImage">
                 <img src={typeInfo[type].image} alt="Suit Icon" draggable="false" />

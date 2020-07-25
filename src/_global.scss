@@ -12,6 +12,11 @@ $font-weights: (
     flex-direction: row;
 }
 
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
 @mixin flexSpaceBetween {
     justify-content: space-between;
     align-items: center;

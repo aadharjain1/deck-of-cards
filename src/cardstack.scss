@@ -1,5 +1,13 @@
 @import './global';
 
+@mixin absoluteOverlap{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
 .cardStack{
     @include flexRow;
     @include flexCenter;
@@ -13,5 +21,22 @@
 
     &:last-of-type{
         margin-right: 0;
+    }
+
+    .default{
+        @include flexColumn;
+        @include flexCenter;
+        @include absoluteOverlap;
+        z-index: 0;
+    }
+
+    .cardContainer{
+        @include absoluteOverlap;
+        z-index: 5;
+    }
+
+    .dropContainer{
+        @include absoluteOverlap;
+        z-index: 10;
     }
 }
