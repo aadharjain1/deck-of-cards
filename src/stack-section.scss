@@ -1,0 +1,7 @@
+@import './global';
+
+.stackSection{
+    @include flexRow;
+    @include flexCenter;
+    padding: 20px 0;
+}
