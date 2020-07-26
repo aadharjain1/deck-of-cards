@@ -3,11 +3,11 @@ import StackSection from './StackSection';
 import CardsSection from './CardsSection';
 import './game-section.scss';
 
-const GameSection = () => {
+const GameSection = ({ state, setState }) => {
     return(
         <div className="gameSection">
-            <StackSection></StackSection>
-            <CardsSection></CardsSection>
+            <StackSection stackedCards={state.stackedCards} state={state} setState={setState}></StackSection>
+            <CardsSection cardsLayout={state.cardsLayout}></CardsSection>
         </div>
     );
 };

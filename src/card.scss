@@ -9,6 +9,7 @@
     height: 160px;
     border-radius: 5px;
     padding: 10px;
+    position: absolute;
 
     &:hover{
         box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 15px 25px 0 rgba(0, 0, 0, 0.19);
@@ -31,5 +32,15 @@
     .bottomNumber{
         text-align: right;
         font-size: 1.2rem;
+    }
+
+    &.stackedCard{
+        top: -1px !important;
+        left: -1px !important;
+        z-index: 0 !important;
+        
+        &:nth-last-of-type(n+2){
+            box-shadow: none;
+        }
     }
 }
