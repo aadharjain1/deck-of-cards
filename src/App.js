@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from './Header';
 import GameSection from './GameSection';
 import Footer from './Footer';
-import './App.scss';
+import './app.scss';
 import { suits, randomGenerator } from './utils';
 
 const createInitialState = () => {

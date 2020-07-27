@@ -1,28 +1,6 @@
 import React from 'react';
-import hearts from './assets/hearts.png';
-import diamonds from './assets/diamonds.png';
-import spades from './assets/spades.png';
-import clubs from './assets/clubs.png';
 import './card.scss';
-
-const typeInfo = {
-    hearts: {
-        color: 'red',
-        image: hearts
-    },
-    diamonds: {
-        color: 'red',
-        image: diamonds
-    },
-    spades: {
-        color: 'black',
-        image: spades
-    },
-    clubs: {
-        color: 'black',
-        image: clubs
-    }
-};
+import { typeInfo } from './utils';
 
 const getDisplayNumber = number => {
     switch(number){

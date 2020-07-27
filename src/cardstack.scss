@@ -27,7 +27,13 @@
         @include flexColumn;
         @include flexCenter;
         @include absoluteOverlap;
+        padding: 10px;
         z-index: 0;
+
+        .suitRefImage{
+            width: 50%;
+            margin-bottom: 1rem;
+        }
     }
 
     .cardContainer{

@@ -4,7 +4,7 @@ import './footer.scss';
 const Footer = () => {
     return(
         <footer className="footer">
-            Copyrights &copy; {new Date().getFullYear()}
+            Copyright &copy; {new Date().getFullYear()}. All rights reserved
         </footer>
     );
 };

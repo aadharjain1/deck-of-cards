@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from './Card';
 import './cardstack.scss';
+import { typeInfo } from './utils';
 
 const onDragOver = e => {
     e.preventDefault();
@@ -27,6 +28,7 @@ const CardStack = ({ type, suitStackedCards, state, setState }) => {
     return(
         <div className="cardStack">
             <div className="default">
+                <img src={typeInfo[type].image} alt="Suit Icon" draggable="false" className="suitRefImage" />
                 {type}
             </div>
             <div className="cardContainer">
