@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/deck-of-cards/static/css/main.479c0891.chunk.css",
+    "main.js": "/deck-of-cards/static/js/main.6b800139.chunk.js",
+    "main.js.map": "/deck-of-cards/static/js/main.6b800139.chunk.js.map",
+    "runtime-main.js": "/deck-of-cards/static/js/runtime-main.70b577be.js",
+    "runtime-main.js.map": "/deck-of-cards/static/js/runtime-main.70b577be.js.map",
+    "static/js/2.7b7fdce2.chunk.js": "/deck-of-cards/static/js/2.7b7fdce2.chunk.js",
+    "static/js/2.7b7fdce2.chunk.js.map": "/deck-of-cards/static/js/2.7b7fdce2.chunk.js.map",
+    "index.html": "/deck-of-cards/index.html",
+    "precache-manifest.fab2b92d3f056c2b3ff1b4b574fe2f3c.js": "/deck-of-cards/precache-manifest.fab2b92d3f056c2b3ff1b4b574fe2f3c.js",
+    "service-worker.js": "/deck-of-cards/service-worker.js",
+    "static/css/main.479c0891.chunk.css.map": "/deck-of-cards/static/css/main.479c0891.chunk.css.map",
+    "static/js/2.7b7fdce2.chunk.js.LICENSE.txt": "/deck-of-cards/static/js/2.7b7fdce2.chunk.js.LICENSE.txt",
+    "static/media/clubs.png": "/deck-of-cards/static/media/clubs.32c2f0d6.png",
+    "static/media/diamonds.png": "/deck-of-cards/static/media/diamonds.66786da3.png",
+    "static/media/hearts.png": "/deck-of-cards/static/media/hearts.236e820d.png",
+    "static/media/spades.png": "/deck-of-cards/static/media/spades.12977290.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.70b577be.js",
+    "static/js/2.7b7fdce2.chunk.js",
+    "static/css/main.479c0891.chunk.css",
+    "static/js/main.6b800139.chunk.js"
+  ]
+}
